@@ -507,11 +507,7 @@ namespace crypto
     bool is_zero() const
     {
       // (0, 1) ~ (0, z, z, 0)
-      if (fe_isnonzero(m_p3.X) != 0)
-        return false;
-      fe y_minus_z;
-      fe_sub(y_minus_z, m_p3.Y, m_p3.Z);
-      return fe_isnonzero(y_minus_z) == 0;
+      return fe_isnonzero(m_p3.X) * fe_cmp(m_p3.Y, m_p3.Z) == 0;
     }
 
     bool is_in_main_subgroup() const
@@ -672,11 +668,6 @@ namespace crypto
         return false;
 
       return true;
-    };
-
-    friend bool operator!=(const point_t& lhs, const point_t& rhs)
-    {
-      return !(lhs == rhs);
     };
 
     friend std::ostream& operator<<(std::ostream& ss, const point_t &v)

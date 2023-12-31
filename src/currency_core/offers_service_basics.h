@@ -33,7 +33,6 @@ namespace bc_services
     std::string payment_types;      // []money accept type(bank transaction, internet money, cash, etc)
     std::string deal_option;        // []full amount, by parts
     std::string category;           // []
-    std::string preview_url;        // []
     uint8_t expiration_time;        // n-days
     //-----------------
 
@@ -52,7 +51,6 @@ namespace bc_services
       KV_SERIALIZE_N(deal_option, "do")
       KV_SERIALIZE_N(category, "cat")
       KV_SERIALIZE_N(expiration_time, "et")
-      KV_SERIALIZE_N(preview_url, "url")
     END_KV_SERIALIZE_MAP()
   };
 

@@ -27,7 +27,6 @@
 #pragma once
 
 #include <boost/mpl/vector.hpp>
-#include <boost/mpl/contains.hpp>
 #include <deque>
 
 namespace epee
