@@ -21,7 +21,7 @@
 #define CURRENCY_MAX_BLOCK_NUMBER                       500000000
 #define CURRENCY_MAX_BLOCK_SIZE                         500000000  // block header blob limit, never used!
 #define CURRENCY_TX_MAX_ALLOWED_OUTS                    2000
-#define CURRENCY_PUBLIC_ADDRESS_BASE58_PREFIX           0x6901   // addresses start with 'NiR'
+#define CURRENCY_PUBLIC_ADDRESS_BASE58_PREFIX           0x1882    // addresses start with 'NiR'
 #define CURRENCY_PUBLIC_INTEG_ADDRESS_BASE58_PREFIX     0x2577 // integrated addresses start with 'iN'
 #define CURRENCY_PUBLIC_INTEG_ADDRESS_V2_BASE58_PREFIX  0x2577 // integrated addresses start with 'iN'
 #define CURRENCY_PUBLIC_AUDITABLE_ADDRESS_BASE58_PREFIX 0x1e4747 // auditable addresses start with 'aNx'
@@ -100,18 +100,18 @@
 
 
 #ifndef TESTNET
-#define P2P_DEFAULT_PORT                                22021
-#define RPC_DEFAULT_PORT                                22022
-#define STRATUM_DEFAULT_PORT                            22023
+#define P2P_DEFAULT_PORT                                11231
+#define RPC_DEFAULT_PORT                                11232
+#define STRATUM_DEFAULT_PORT                            11233
 #define P2P_NETWORK_ID_TESTNET_FLAG                     0
-#define P2P_MAINTAINERS_PUB_KEY                         "8f138bb73f6d663a3746a542770781a09579a7b84cb4125249e95530824ee607"
+#define P2P_MAINTAINERS_PUB_KEY                         "aaa2d7aabc8d383fd53a3ae898697b28f236ceade6bafc1eecff413a6a02272a"
 #else 
 #define P2P_DEFAULT_PORT                                (11112 + CURRENCY_FORMATION_VERSION)
 #define RPC_DEFAULT_PORT                                22011
 #define STRATUM_DEFAULT_PORT                            22012
 #define STRARUM_DEFAULT_PORT                            22013
 #define P2P_NETWORK_ID_TESTNET_FLAG                     1
-#define P2P_MAINTAINERS_PUB_KEY                         "aaa2d7aabc8d383fd53a3ae898697b28f236ceade6bafc1eecff413a6a02272a"
+#define P2P_MAINTAINERS_PUB_KEY                         "8f138bb73f6d663a3746a542770781a09579a7b84cb4125249e95530824ee607"
 #endif
 
 #define P2P_NETWORK_ID_VER                              (CURRENCY_FORMATION_VERSION+0)
@@ -169,9 +169,9 @@
 
 
 
-#define CURRENCY_NAME_ABR                               "NiR"
+#define CURRENCY_NAME_ABR                               "Nirmata"
 #define CURRENCY_NAME_BASE                              "Nirmata"
-#define CURRENCY_NAME_SHORT_BASE                        "NiR"
+#define CURRENCY_NAME_SHORT_BASE                        "Nirmata"
 #ifndef TESTNET
 #define CURRENCY_NAME                                   CURRENCY_NAME_BASE
 #define CURRENCY_NAME_SHORT                             CURRENCY_NAME_SHORT_BASE
